@@ -8,8 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		D415662A1DC75861009EEC3D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566291DC75861009EEC3D /* AppDelegate.swift */; };
-		D415662C1DC75861009EEC3D /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415662B1DC75861009EEC3D /* FirstViewController.swift */; };
-		D415662E1DC75861009EEC3D /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415662D1DC75861009EEC3D /* SecondViewController.swift */; };
+		D415662C1DC75861009EEC3D /* CompanyDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415662B1DC75861009EEC3D /* CompanyDetailViewController.swift */; };
 		D41566311DC75861009EEC3D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D415662F1DC75861009EEC3D /* Main.storyboard */; };
 		D41566331DC75861009EEC3D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D41566321DC75861009EEC3D /* Assets.xcassets */; };
 		D41566361DC75861009EEC3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41566341DC75861009EEC3D /* LaunchScreen.storyboard */; };
@@ -18,6 +17,7 @@
 		D415665A1DC75D15009EEC3D /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41566591DC75D15009EEC3D /* Fakery.framework */; };
 		D415665B1DC75D15009EEC3D /* Fakery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D41566591DC75D15009EEC3D /* Fakery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D415665F1DC75D48009EEC3D /* Fakery.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D415665E1DC75D48009EEC3D /* Fakery.framework.dSYM */; };
+		D41566681DC76319009EEC3D /* CompaniesListViewControllerTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566671DC76319009EEC3D /* CompaniesListViewControllerTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,8 +64,7 @@
 /* Begin PBXFileReference section */
 		D41566261DC75861009EEC3D /* StoryboardRefDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardRefDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41566291DC75861009EEC3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D415662B1DC75861009EEC3D /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		D415662D1DC75861009EEC3D /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		D415662B1DC75861009EEC3D /* CompanyDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompanyDetailViewController.swift; sourceTree = "<group>"; };
 		D41566301DC75861009EEC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D41566321DC75861009EEC3D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D41566351DC75861009EEC3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -78,6 +77,7 @@
 		D415664D1DC75861009EEC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D41566591DC75D15009EEC3D /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fakery.framework; path = Carthage/Build/iOS/Fakery.framework; sourceTree = "<group>"; };
 		D415665E1DC75D48009EEC3D /* Fakery.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Fakery.framework.dSYM; path = Carthage/Build/iOS/Fakery.framework.dSYM; sourceTree = "<group>"; };
+		D41566671DC76319009EEC3D /* CompaniesListViewControllerTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesListViewControllerTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,12 +130,11 @@
 		D41566281DC75861009EEC3D /* StoryboardRefDemo */ = {
 			isa = PBXGroup;
 			children = (
+				D41566621DC76126009EEC3D /* Model */,
+				D41566631DC7612E009EEC3D /* ViewModel */,
+				D41566641DC761C5009EEC3D /* UI */,
 				D41566291DC75861009EEC3D /* AppDelegate.swift */,
-				D415662B1DC75861009EEC3D /* FirstViewController.swift */,
-				D415662D1DC75861009EEC3D /* SecondViewController.swift */,
-				D415662F1DC75861009EEC3D /* Main.storyboard */,
 				D41566321DC75861009EEC3D /* Assets.xcassets */,
-				D41566341DC75861009EEC3D /* LaunchScreen.storyboard */,
 				D41566371DC75861009EEC3D /* Info.plist */,
 			);
 			path = StoryboardRefDemo;
@@ -174,6 +173,47 @@
 				D415665E1DC75D48009EEC3D /* Fakery.framework.dSYM */,
 			);
 			name = "Debugging Symbols";
+			sourceTree = "<group>";
+		};
+		D41566621DC76126009EEC3D /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
+		D41566631DC7612E009EEC3D /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = ViewModel;
+			sourceTree = "<group>";
+		};
+		D41566641DC761C5009EEC3D /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				D41566661DC761E6009EEC3D /* Storyboards */,
+				D41566651DC761D4009EEC3D /* ViewControllers */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		D41566651DC761D4009EEC3D /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D41566671DC76319009EEC3D /* CompaniesListViewControllerTableViewController.swift */,
+				D415662B1DC75861009EEC3D /* CompanyDetailViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D41566661DC761E6009EEC3D /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				D415662F1DC75861009EEC3D /* Main.storyboard */,
+				D41566341DC75861009EEC3D /* LaunchScreen.storyboard */,
+			);
+			name = Storyboards;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,9 +355,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D415662E1DC75861009EEC3D /* SecondViewController.swift in Sources */,
+				D41566681DC76319009EEC3D /* CompaniesListViewControllerTableViewController.swift in Sources */,
 				D415662A1DC75861009EEC3D /* AppDelegate.swift in Sources */,
-				D415662C1DC75861009EEC3D /* FirstViewController.swift in Sources */,
+				D415662C1DC75861009EEC3D /* CompanyDetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
