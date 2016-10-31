@@ -1,0 +1,3 @@
+[submodule "Carthage/Checkouts/Fakery"]
+	path = Carthage/Checkouts/Fakery
+	url = ssh://git@github.com/vadymmarkov/Fakery.git

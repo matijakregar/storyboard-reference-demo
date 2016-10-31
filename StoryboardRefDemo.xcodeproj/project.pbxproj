@@ -15,6 +15,9 @@
 		D41566361DC75861009EEC3D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D41566341DC75861009EEC3D /* LaunchScreen.storyboard */; };
 		D41566411DC75861009EEC3D /* StoryboardRefDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566401DC75861009EEC3D /* StoryboardRefDemoTests.swift */; };
 		D415664C1DC75861009EEC3D /* StoryboardRefDemoUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415664B1DC75861009EEC3D /* StoryboardRefDemoUITests.swift */; };
+		D415665A1DC75D15009EEC3D /* Fakery.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D41566591DC75D15009EEC3D /* Fakery.framework */; };
+		D415665B1DC75D15009EEC3D /* Fakery.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D41566591DC75D15009EEC3D /* Fakery.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D415665F1DC75D48009EEC3D /* Fakery.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D415665E1DC75D48009EEC3D /* Fakery.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,6 +37,30 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		D415665C1DC75D15009EEC3D /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				D415665B1DC75D15009EEC3D /* Fakery.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D415665D1DC75D29009EEC3D /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 16;
+			files = (
+				D415665F1DC75D48009EEC3D /* Fakery.framework.dSYM in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		D41566261DC75861009EEC3D /* StoryboardRefDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StoryboardRefDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D41566291DC75861009EEC3D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -49,6 +76,8 @@
 		D41566471DC75861009EEC3D /* StoryboardRefDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StoryboardRefDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D415664B1DC75861009EEC3D /* StoryboardRefDemoUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoryboardRefDemoUITests.swift; sourceTree = "<group>"; };
 		D415664D1DC75861009EEC3D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D41566591DC75D15009EEC3D /* Fakery.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Fakery.framework; path = Carthage/Build/iOS/Fakery.framework; sourceTree = "<group>"; };
+		D415665E1DC75D48009EEC3D /* Fakery.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = Fakery.framework.dSYM; path = Carthage/Build/iOS/Fakery.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +85,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D415665A1DC75D15009EEC3D /* Fakery.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -80,6 +110,7 @@
 			isa = PBXGroup;
 			children = (
 				D41566281DC75861009EEC3D /* StoryboardRefDemo */,
+				D41566601DC75E63009EEC3D /* Frameworks */,
 				D415663F1DC75861009EEC3D /* StoryboardRefDemoTests */,
 				D415664A1DC75861009EEC3D /* StoryboardRefDemoUITests */,
 				D41566271DC75861009EEC3D /* Products */,
@@ -128,6 +159,23 @@
 			path = StoryboardRefDemoUITests;
 			sourceTree = "<group>";
 		};
+		D41566601DC75E63009EEC3D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D41566611DC75E9F009EEC3D /* Debugging Symbols */,
+				D41566591DC75D15009EEC3D /* Fakery.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D41566611DC75E9F009EEC3D /* Debugging Symbols */ = {
+			isa = PBXGroup;
+			children = (
+				D415665E1DC75D48009EEC3D /* Fakery.framework.dSYM */,
+			);
+			name = "Debugging Symbols";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -138,6 +186,8 @@
 				D41566221DC75861009EEC3D /* Sources */,
 				D41566231DC75861009EEC3D /* Frameworks */,
 				D41566241DC75861009EEC3D /* Resources */,
+				D415665C1DC75D15009EEC3D /* Embed Frameworks */,
+				D415665D1DC75D29009EEC3D /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -418,6 +468,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93TVZG5NS7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StoryboardRefDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matijakregar.StoryboardRefDemo;
@@ -431,6 +485,10 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = 93TVZG5NS7;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)/Carthage/Build/iOS",
+				);
 				INFOPLIST_FILE = StoryboardRefDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.matijakregar.StoryboardRefDemo;
