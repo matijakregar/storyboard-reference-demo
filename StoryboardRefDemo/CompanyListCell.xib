@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="KGk-i7-Jjw" customClass="CompanyListCell" customModule="StoryboardRefDemo" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="60"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="59"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="szx-wv-VQE">
+                        <rect key="frame" x="8" y="4.5" width="68.5" height="51.5"/>
+                        <constraints>
+                            <constraint firstAttribute="width" secondItem="szx-wv-VQE" secondAttribute="height" multiplier="4:3" id="238-cm-yeT"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4yQ-DO-hLX">
+                        <rect key="frame" x="91.5" y="19" width="220.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="trailingMargin" secondItem="4yQ-DO-hLX" secondAttribute="trailing" id="Dq5-1F-YPm"/>
+                    <constraint firstItem="4yQ-DO-hLX" firstAttribute="centerY" secondItem="szx-wv-VQE" secondAttribute="centerY" id="HoO-i5-LDf"/>
+                    <constraint firstItem="szx-wv-VQE" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="Pod-bj-yuU"/>
+                    <constraint firstItem="szx-wv-VQE" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" id="ZNl-af-mS5"/>
+                    <constraint firstItem="szx-wv-VQE" firstAttribute="height" secondItem="H2p-sc-9uM" secondAttribute="height" constant="-8" id="x6x-V8-rzc"/>
+                    <constraint firstItem="4yQ-DO-hLX" firstAttribute="leading" secondItem="szx-wv-VQE" secondAttribute="trailing" constant="15" id="xS5-WE-Hcn"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="logoView" destination="szx-wv-VQE" id="Br7-wH-zHP"/>
+                <outlet property="nameLabel" destination="4yQ-DO-hLX" id="6KS-UN-TVk"/>
+            </connections>
+        </tableViewCell>
+    </objects>
+</document>
