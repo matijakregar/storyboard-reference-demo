@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16B2555" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="HPD-ef-zRz">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Collections Tab Bar Controller-->
+        <scene sceneID="YV2-EM-NWH">
+            <objects>
+                <tabBarController storyboardIdentifier="CollectionsTabBarControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="HPD-ef-zRz" customClass="CollectionsTabBarController" customModule="StoryboardRefDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="YfF-ld-Sb3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dqI-DE-0OO" kind="relationship" relationship="viewControllers" id="xkG-TB-o0A"/>
+                        <segue destination="Rna-rk-pmc" kind="relationship" relationship="viewControllers" id="ZXO-bm-Bt1"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jqx-G6-UTr" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-932" y="-167"/>
+        </scene>
+        <!--CompaniesCollectionControllerID-->
+        <scene sceneID="0bW-H5-aeu">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Collection" referencedIdentifier="CompaniesCollectionControllerID" id="dqI-DE-0OO" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="q3b-bG-nc6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Rui-P8-Ycj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-302"/>
+        </scene>
+        <!--CompaniesCollectionControllerID-->
+        <scene sceneID="Hje-F4-Cm2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Collection" referencedIdentifier="CompaniesCollectionControllerID" id="Rna-rk-pmc" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="7Tn-au-6Lq"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="go2-DG-Dkj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-300" y="-38"/>
+        </scene>
+        <!--Companies Collection Controller-->
+        <scene sceneID="w38-5L-xvp">
+            <objects>
+                <collectionViewController storyboardIdentifier="CompaniesCollectionControllerID" useStoryboardIdentifierAsRestorationIdentifier="YES" id="ZIJ-aT-gMZ" customClass="CompaniesCollectionController" customModule="StoryboardRefDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <collectionView key="view" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="DL5-dq-IsM">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="1" minimumInteritemSpacing="1" id="SBr-zy-R0M">
+                            <size key="itemSize" width="172" height="172"/>
+                            <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                            <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                            <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                        </collectionViewFlowLayout>
+                        <cells>
+                            <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="CompanyCollectionCell" id="X2l-E2-On4" customClass="CompanyCollectionCell" customModule="StoryboardRefDemo" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="172" height="172"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="g3F-IC-G5s">
+                                            <rect key="frame" x="8" y="8" width="156" height="106"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="g3F-IC-G5s" secondAttribute="height" multiplier="78:53" id="qHU-N0-2nx"/>
+                                            </constraints>
+                                        </imageView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVM-JJ-vRC">
+                                            <rect key="frame" x="8" y="122" width="156" height="16"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </view>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="g3F-IC-G5s" firstAttribute="top" secondItem="X2l-E2-On4" secondAttribute="topMargin" id="9SV-u9-XLs"/>
+                                    <constraint firstItem="PVM-JJ-vRC" firstAttribute="leading" secondItem="g3F-IC-G5s" secondAttribute="leading" id="P4e-uq-ubw"/>
+                                    <constraint firstItem="g3F-IC-G5s" firstAttribute="width" secondItem="X2l-E2-On4" secondAttribute="width" constant="-16" id="bur-Ku-rlq"/>
+                                    <constraint firstItem="PVM-JJ-vRC" firstAttribute="trailing" secondItem="g3F-IC-G5s" secondAttribute="trailing" id="cZ0-rN-hZZ"/>
+                                    <constraint firstItem="PVM-JJ-vRC" firstAttribute="leading" secondItem="X2l-E2-On4" secondAttribute="leadingMargin" id="dVS-yA-OQ0"/>
+                                    <constraint firstItem="PVM-JJ-vRC" firstAttribute="top" secondItem="g3F-IC-G5s" secondAttribute="bottom" constant="8" symbolic="YES" id="hDX-iH-kkv"/>
+                                    <constraint firstItem="g3F-IC-G5s" firstAttribute="centerX" secondItem="X2l-E2-On4" secondAttribute="centerX" id="jEH-pM-Xj3"/>
+                                    <constraint firstItem="PVM-JJ-vRC" firstAttribute="trailing" secondItem="X2l-E2-On4" secondAttribute="trailingMargin" id="w63-Kb-u5c"/>
+                                </constraints>
+                                <connections>
+                                    <outlet property="logoView" destination="g3F-IC-G5s" id="K8p-8E-Ycy"/>
+                                    <outlet property="nameLabel" destination="PVM-JJ-vRC" id="Bnh-M7-k0T"/>
+                                    <segue destination="xSg-Er-50t" kind="show" id="tCR-RM-WoW"/>
+                                </connections>
+                            </collectionViewCell>
+                        </cells>
+                        <connections>
+                            <outlet property="dataSource" destination="ZIJ-aT-gMZ" id="1xN-ax-wOp"/>
+                            <outlet property="delegate" destination="ZIJ-aT-gMZ" id="7OI-7b-r3b"/>
+                        </connections>
+                    </collectionView>
+                </collectionViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aFi-Je-ec6" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504.80000000000001" y="-168.6656671664168"/>
+        </scene>
+        <!--CompanyDetailViewControllerID-->
+        <scene sceneID="oED-tN-soS">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="CompanyDetailViewControllerID" id="xSg-Er-50t" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FS4-bh-Y9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1194" y="-168"/>
+        </scene>
+    </scenes>
+</document>

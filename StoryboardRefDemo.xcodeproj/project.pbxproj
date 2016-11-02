@@ -27,6 +27,10 @@
 		D41566791DC77D2F009EEC3D /* ClientsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566781DC77D2F009EEC3D /* ClientsViewModel.swift */; };
 		D415667B1DC77E0E009EEC3D /* PartnersListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415667A1DC77E0E009EEC3D /* PartnersListViewController.swift */; };
 		D415667D1DC77F28009EEC3D /* ClientsListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D415667C1DC77F28009EEC3D /* ClientsListViewController.swift */; };
+		D415667F1DC78F2A009EEC3D /* Collection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D415667E1DC78F2A009EEC3D /* Collection.storyboard */; };
+		D41566811DC79090009EEC3D /* CompanyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566801DC79090009EEC3D /* CompanyCollectionCell.swift */; };
+		D41566831DCA7D58009EEC3D /* CollectionsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566821DCA7D58009EEC3D /* CollectionsTabBarController.swift */; };
+		D41566851DCA7D9C009EEC3D /* CompaniesCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566841DCA7D9C009EEC3D /* CompaniesCollectionController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -96,6 +100,10 @@
 		D41566781DC77D2F009EEC3D /* ClientsViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsViewModel.swift; sourceTree = "<group>"; };
 		D415667A1DC77E0E009EEC3D /* PartnersListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PartnersListViewController.swift; sourceTree = "<group>"; };
 		D415667C1DC77F28009EEC3D /* ClientsListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ClientsListViewController.swift; sourceTree = "<group>"; };
+		D415667E1DC78F2A009EEC3D /* Collection.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Collection.storyboard; sourceTree = "<group>"; };
+		D41566801DC79090009EEC3D /* CompanyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCollectionCell.swift; sourceTree = "<group>"; };
+		D41566821DCA7D58009EEC3D /* CollectionsTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsTabBarController.swift; sourceTree = "<group>"; };
+		D41566841DCA7D9C009EEC3D /* CompaniesCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesCollectionController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -229,6 +237,8 @@
 				D415667A1DC77E0E009EEC3D /* PartnersListViewController.swift */,
 				D415667C1DC77F28009EEC3D /* ClientsListViewController.swift */,
 				D415662B1DC75861009EEC3D /* CompanyDetailViewController.swift */,
+				D41566821DCA7D58009EEC3D /* CollectionsTabBarController.swift */,
+				D41566841DCA7D9C009EEC3D /* CompaniesCollectionController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -237,6 +247,7 @@
 			isa = PBXGroup;
 			children = (
 				D415662F1DC75861009EEC3D /* Main.storyboard */,
+				D415667E1DC78F2A009EEC3D /* Collection.storyboard */,
 				D41566341DC75861009EEC3D /* LaunchScreen.storyboard */,
 			);
 			name = Storyboards;
@@ -255,6 +266,7 @@
 			children = (
 				D415666D1DC76E50009EEC3D /* CompanyListCell.swift */,
 				D415666E1DC76E50009EEC3D /* CompanyListCell.xib */,
+				D41566801DC79090009EEC3D /* CompanyCollectionCell.swift */,
 			);
 			name = Cells;
 			sourceTree = "<group>";
@@ -383,6 +395,7 @@
 				D41566331DC75861009EEC3D /* Assets.xcassets in Resources */,
 				D41566311DC75861009EEC3D /* Main.storyboard in Resources */,
 				D41566701DC76E50009EEC3D /* CompanyListCell.xib in Resources */,
+				D415667F1DC78F2A009EEC3D /* Collection.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -412,12 +425,15 @@
 				D41566751DC77BFE009EEC3D /* CompaniesViewModel.swift in Sources */,
 				D415666F1DC76E50009EEC3D /* CompanyListCell.swift in Sources */,
 				D415662A1DC75861009EEC3D /* AppDelegate.swift in Sources */,
+				D41566811DC79090009EEC3D /* CompanyCollectionCell.swift in Sources */,
 				D415662C1DC75861009EEC3D /* CompanyDetailViewController.swift in Sources */,
+				D41566851DCA7D9C009EEC3D /* CompaniesCollectionController.swift in Sources */,
 				D41566771DC77C6E009EEC3D /* PartnersViewModel.swift in Sources */,
 				D41566731DC772B9009EEC3D /* UIImageView.swift in Sources */,
 				D415667D1DC77F28009EEC3D /* ClientsListViewController.swift in Sources */,
 				D415666A1DC7698A009EEC3D /* Company.swift in Sources */,
 				D41566791DC77D2F009EEC3D /* ClientsViewModel.swift in Sources */,
+				D41566831DCA7D58009EEC3D /* CollectionsTabBarController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
