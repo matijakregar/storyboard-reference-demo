@@ -26,6 +26,7 @@
                         </connections>
                     </tableView>
                     <tabBarItem key="tabBarItem" title="Partners" image="first" id="EGW-Dq-OYK"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
                         <segue destination="oIm-M7-KT5" kind="show" identifier="ShowDetail" id="AlG-5d-Jjq"/>
                     </connections>
@@ -155,6 +156,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="L62-Md-OPD" kind="show" id="qSZ-qp-bqe"/>
+                                        </connections>
                                     </tableViewCell>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" textLabel="fgm-Wx-zEr" style="IBUITableViewCellStyleDefault" id="72D-wl-aSU">
                                         <rect key="frame" x="0.0" y="88" width="375" height="44"/>
@@ -187,6 +191,14 @@
             </objects>
             <point key="canvasLocation" x="-865" y="0.0"/>
         </scene>
+        <!--CollectionsTabBarControllerID-->
+        <scene sceneID="xlA-0O-apt">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Collection" referencedIdentifier="CollectionsTabBarControllerID" id="L62-Md-OPD" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="To1-0O-NBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-512" y="445"/>
+        </scene>
         <!--Navigation Controller-->
         <scene sceneID="7T4-Fw-9Vb">
             <objects>
@@ -207,7 +219,7 @@
         <scene sceneID="yl2-sM-qoP">
             <objects>
                 <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
-                    <nil key="simulatedBottomBarMetrics"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
