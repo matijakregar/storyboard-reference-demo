@@ -77,8 +77,8 @@
                                                 <constraint firstAttribute="width" secondItem="g3F-IC-G5s" secondAttribute="height" multiplier="78:53" id="qHU-N0-2nx"/>
                                             </constraints>
                                         </imageView>
-                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVM-JJ-vRC">
-                                            <rect key="frame" x="8" y="122" width="156" height="16"/>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="PVM-JJ-vRC">
+                                            <rect key="frame" x="8" y="117" width="156" height="16"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                             <nil key="textColor"/>
                                             <nil key="highlightedColor"/>
@@ -92,8 +92,9 @@
                                     <constraint firstItem="g3F-IC-G5s" firstAttribute="width" secondItem="X2l-E2-On4" secondAttribute="width" constant="-16" id="bur-Ku-rlq"/>
                                     <constraint firstItem="PVM-JJ-vRC" firstAttribute="trailing" secondItem="g3F-IC-G5s" secondAttribute="trailing" id="cZ0-rN-hZZ"/>
                                     <constraint firstItem="PVM-JJ-vRC" firstAttribute="leading" secondItem="X2l-E2-On4" secondAttribute="leadingMargin" id="dVS-yA-OQ0"/>
-                                    <constraint firstItem="PVM-JJ-vRC" firstAttribute="top" secondItem="g3F-IC-G5s" secondAttribute="bottom" constant="8" symbolic="YES" id="hDX-iH-kkv"/>
+                                    <constraint firstItem="PVM-JJ-vRC" firstAttribute="top" secondItem="g3F-IC-G5s" secondAttribute="bottom" constant="3" id="hDX-iH-kkv"/>
                                     <constraint firstItem="g3F-IC-G5s" firstAttribute="centerX" secondItem="X2l-E2-On4" secondAttribute="centerX" id="jEH-pM-Xj3"/>
+                                    <constraint firstAttribute="bottomMargin" relation="greaterThanOrEqual" secondItem="PVM-JJ-vRC" secondAttribute="bottom" id="jt8-Uy-kEi"/>
                                     <constraint firstItem="PVM-JJ-vRC" firstAttribute="trailing" secondItem="X2l-E2-On4" secondAttribute="trailingMargin" id="w63-Kb-u5c"/>
                                 </constraints>
                                 <connections>
@@ -119,7 +120,7 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="CompanyDetailViewControllerID" id="xSg-Er-50t" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FS4-bh-Y9B" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1194" y="-168"/>
+            <point key="canvasLocation" x="1196" y="-169"/>
         </scene>
     </scenes>
 </document>
