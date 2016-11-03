@@ -1,3 +1,6 @@
 [submodule "Carthage/Checkouts/Fakery"]
 	path = Carthage/Checkouts/Fakery
 	url = ssh://git@github.com/vadymmarkov/Fakery.git
+[submodule "Carthage/Checkouts/storyboard-reference-demo-kit"]
+	path = Carthage/Checkouts/storyboard-reference-demo-kit
+	url = ssh://git@github.com/matijakregar/storyboard-reference-demo-kit.git

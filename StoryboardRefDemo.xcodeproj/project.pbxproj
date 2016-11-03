@@ -31,6 +31,10 @@
 		D41566811DC79090009EEC3D /* CompanyCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566801DC79090009EEC3D /* CompanyCollectionCell.swift */; };
 		D41566831DCA7D58009EEC3D /* CollectionsTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566821DCA7D58009EEC3D /* CollectionsTabBarController.swift */; };
 		D41566851DCA7D9C009EEC3D /* CompaniesCollectionController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D41566841DCA7D9C009EEC3D /* CompaniesCollectionController.swift */; };
+		D42DDBF91DCB69A8004AFE69 /* StoryboardRefDemoKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D42DDBF81DCB69A8004AFE69 /* StoryboardRefDemoKit.framework */; };
+		D42DDBFA1DCB69A8004AFE69 /* StoryboardRefDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D42DDBF81DCB69A8004AFE69 /* StoryboardRefDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		D42DDBFC1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = D42DDBFB1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM */; };
+		D42DDBFD1DCB69CB004AFE69 /* StoryboardRefDemoKit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42DDBFB1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,6 +62,7 @@
 			dstSubfolderSpec = 10;
 			files = (
 				D415665B1DC75D15009EEC3D /* Fakery.framework in Embed Frameworks */,
+				D42DDBFA1DCB69A8004AFE69 /* StoryboardRefDemoKit.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -68,6 +73,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 16;
 			files = (
+				D42DDBFD1DCB69CB004AFE69 /* StoryboardRefDemoKit.framework.dSYM in CopyFiles */,
 				D415665F1DC75D48009EEC3D /* Fakery.framework.dSYM in CopyFiles */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +110,8 @@
 		D41566801DC79090009EEC3D /* CompanyCollectionCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompanyCollectionCell.swift; sourceTree = "<group>"; };
 		D41566821DCA7D58009EEC3D /* CollectionsTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionsTabBarController.swift; sourceTree = "<group>"; };
 		D41566841DCA7D9C009EEC3D /* CompaniesCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesCollectionController.swift; sourceTree = "<group>"; };
+		D42DDBF81DCB69A8004AFE69 /* StoryboardRefDemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoryboardRefDemoKit.framework; path = Carthage/Build/iOS/StoryboardRefDemoKit.framework; sourceTree = "<group>"; };
+		D42DDBFB1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = StoryboardRefDemoKit.framework.dSYM; path = Carthage/Build/iOS/StoryboardRefDemoKit.framework.dSYM; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +120,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D415665A1DC75D15009EEC3D /* Fakery.framework in Frameworks */,
+				D42DDBF91DCB69A8004AFE69 /* StoryboardRefDemoKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -189,6 +198,7 @@
 			isa = PBXGroup;
 			children = (
 				D41566611DC75E9F009EEC3D /* Debugging Symbols */,
+				D42DDBF81DCB69A8004AFE69 /* StoryboardRefDemoKit.framework */,
 				D41566591DC75D15009EEC3D /* Fakery.framework */,
 			);
 			name = Frameworks;
@@ -197,6 +207,7 @@
 		D41566611DC75E9F009EEC3D /* Debugging Symbols */ = {
 			isa = PBXGroup;
 			children = (
+				D42DDBFB1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM */,
 				D415665E1DC75D48009EEC3D /* Fakery.framework.dSYM */,
 			);
 			name = "Debugging Symbols";
@@ -394,6 +405,7 @@
 				D41566361DC75861009EEC3D /* LaunchScreen.storyboard in Resources */,
 				D41566331DC75861009EEC3D /* Assets.xcassets in Resources */,
 				D41566311DC75861009EEC3D /* Main.storyboard in Resources */,
+				D42DDBFC1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM in Resources */,
 				D41566701DC76E50009EEC3D /* CompanyListCell.xib in Resources */,
 				D415667F1DC78F2A009EEC3D /* Collection.storyboard in Resources */,
 			);
@@ -690,6 +702,7 @@
 				D41566521DC75861009EEC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41566531DC75861009EEC3D /* Build configuration list for PBXNativeTarget "StoryboardRefDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -698,6 +711,7 @@
 				D41566551DC75861009EEC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		D41566561DC75861009EEC3D /* Build configuration list for PBXNativeTarget "StoryboardRefDemoUITests" */ = {
 			isa = XCConfigurationList;
@@ -706,6 +720,7 @@
 				D41566581DC75861009EEC3D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
