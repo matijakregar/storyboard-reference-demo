@@ -12,9 +12,9 @@ class ClientsViewModel: CompaniesViewModel {
     
     init(numClients: UInt) {
         super.init()
-        self.companies = [Company]()
+        self.companies = [CompanyObj]()
         for _ in 0..<numClients {
-            companies.append(Company())
+            companies.append(CompanyObj())
         }
     }
 }

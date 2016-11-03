@@ -15,7 +15,7 @@ class CompanyDetailViewController: UIViewController {
     @IBOutlet private weak var catchPhraseLabel: UILabel!
     @IBOutlet private weak var bsLabel: UILabel!
     
-    var company: Company? {
+    var company: CompanyObj? {
         didSet {
             if let company = company,
                 logoView != nil {
@@ -33,7 +33,7 @@ class CompanyDetailViewController: UIViewController {
         // Do any additional setup after loading the view, typically from a nib.
     }
     
-    private func displayCompany(_ company: Company) {
+    private func displayCompany(_ company: CompanyObj) {
         nameLabel.text = company.name
         catchPhraseLabel.text = company.catchPhrase
         bsLabel.text = company.bs

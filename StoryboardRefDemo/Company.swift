@@ -7,9 +7,10 @@
 //
 
 import Foundation
+import StoryboardRefDemoKit
 import Fakery
 
-struct Company {
+struct CompanyObj: StoryboardRefDemoKit.Company {
     var name: String
     var catchPhrase: String
     var bs: String

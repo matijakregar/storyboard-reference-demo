@@ -9,5 +9,5 @@
 import Foundation
 
 class CompaniesViewModel {
-    var companies = [Company]()
+    var companies = [CompanyObj]()
 }
