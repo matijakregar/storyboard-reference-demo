@@ -35,6 +35,7 @@
 		D42DDBFA1DCB69A8004AFE69 /* StoryboardRefDemoKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = D42DDBF81DCB69A8004AFE69 /* StoryboardRefDemoKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		D42DDBFC1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM in Resources */ = {isa = PBXBuildFile; fileRef = D42DDBFB1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM */; };
 		D42DDBFD1DCB69CB004AFE69 /* StoryboardRefDemoKit.framework.dSYM in CopyFiles */ = {isa = PBXBuildFile; fileRef = D42DDBFB1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM */; };
+		D42DDC061DCB7093004AFE69 /* KitTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D42DDC051DCB7093004AFE69 /* KitTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		D41566841DCA7D9C009EEC3D /* CompaniesCollectionController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompaniesCollectionController.swift; sourceTree = "<group>"; };
 		D42DDBF81DCB69A8004AFE69 /* StoryboardRefDemoKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoryboardRefDemoKit.framework; path = Carthage/Build/iOS/StoryboardRefDemoKit.framework; sourceTree = "<group>"; };
 		D42DDBFB1DCB69BC004AFE69 /* StoryboardRefDemoKit.framework.dSYM */ = {isa = PBXFileReference; lastKnownFileType = wrapper.dsym; name = StoryboardRefDemoKit.framework.dSYM; path = Carthage/Build/iOS/StoryboardRefDemoKit.framework.dSYM; sourceTree = "<group>"; };
+		D42DDC051DCB7093004AFE69 /* KitTabBarController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = KitTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -250,6 +252,7 @@
 				D415662B1DC75861009EEC3D /* CompanyDetailViewController.swift */,
 				D41566821DCA7D58009EEC3D /* CollectionsTabBarController.swift */,
 				D41566841DCA7D9C009EEC3D /* CompaniesCollectionController.swift */,
+				D42DDC051DCB7093004AFE69 /* KitTabBarController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -442,6 +445,7 @@
 				D41566851DCA7D9C009EEC3D /* CompaniesCollectionController.swift in Sources */,
 				D41566771DC77C6E009EEC3D /* PartnersViewModel.swift in Sources */,
 				D41566731DC772B9009EEC3D /* UIImageView.swift in Sources */,
+				D42DDC061DCB7093004AFE69 /* KitTabBarController.swift in Sources */,
 				D415667D1DC77F28009EEC3D /* ClientsListViewController.swift in Sources */,
 				D415666A1DC7698A009EEC3D /* Company.swift in Sources */,
 				D41566791DC77D2F009EEC3D /* ClientsViewModel.swift in Sources */,

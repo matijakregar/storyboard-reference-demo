@@ -176,6 +176,9 @@
                                                 </label>
                                             </subviews>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="e25-n8-6hi" kind="show" id="HKL-q2-6XR"/>
+                                        </connections>
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
@@ -198,6 +201,44 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="To1-0O-NBh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-512" y="445"/>
+        </scene>
+        <!--Kit Tab Bar Controller-->
+        <scene sceneID="Mjs-Ao-OSU">
+            <objects>
+                <tabBarController id="e25-n8-6hi" customClass="KitTabBarController" customModule="StoryboardRefDemo" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="F2r-Je-GNV">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="Rev-fb-TEj" kind="relationship" relationship="viewControllers" id="ONZ-UV-Ngk"/>
+                        <segue destination="xH4-6z-MGp" kind="relationship" relationship="viewControllers" id="Zj7-rd-KcU"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SnH-T6-Bi4" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-866" y="836"/>
+        </scene>
+        <!--KitCompaniesTableViewControllerID-->
+        <scene sceneID="cxe-vP-Iii">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Kit" bundleIdentifier="com.matijakregar.StoryboardRefDemoKit" referencedIdentifier="KitCompaniesTableViewControllerID" id="Rev-fb-TEj" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TDx-8P-RRs"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TVk-Kb-2uT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="757"/>
+        </scene>
+        <!--KitCompaniesTableViewControllerID-->
+        <scene sceneID="mEn-Tm-QWv">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Kit" bundleIdentifier="com.matijakregar.StoryboardRefDemoKit" referencedIdentifier="KitCompaniesTableViewControllerID" id="xH4-6z-MGp" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TNU-cK-BD6"/>
+                </viewControllerPlaceholder>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="snm-IW-Xx3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-199" y="912"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="7T4-Fw-9Vb">
