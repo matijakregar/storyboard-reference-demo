@@ -10,6 +10,9 @@ import Foundation
 import StoryboardRefDemoKit
 import Fakery
 
+
+// Defines the data object used by the view models and implements an initializer that assigns dummay data with Fakery.
+
 struct CompanyObj: StoryboardRefDemoKit.Company {
     var name: String
     var catchPhrase: String

@@ -8,6 +8,8 @@
 
 import UIKit
 
+// A view controller that presents a single company details.
+
 class CompanyDetailViewController: UIViewController {
     
     @IBOutlet private weak var logoView: UIImageView!
@@ -30,7 +32,6 @@ class CompanyDetailViewController: UIViewController {
         if let company = company {
             displayCompany(company)
         }
-        // Do any additional setup after loading the view, typically from a nib.
     }
     
     private func displayCompany(_ company: CompanyObj) {
@@ -42,12 +43,6 @@ class CompanyDetailViewController: UIViewController {
             logoView.imageFromURL(logoURL)
         }
     }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
-    }
-
 
 }
 

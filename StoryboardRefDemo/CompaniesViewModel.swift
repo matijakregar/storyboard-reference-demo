@@ -8,6 +8,8 @@
 
 import Foundation
 
+// A superclass that defines the property of the view models.
+
 class CompaniesViewModel {
     var companies = [CompanyObj]()
 }

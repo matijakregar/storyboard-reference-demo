@@ -9,6 +9,8 @@
 import UIKit
 import StoryboardRefDemoKit
 
+// A tab bar controller that assigns tab bar items and view models to the view controllers (external framework) linked in the storyboard.
+
 class KitTabBarController: UITabBarController {
 
     let tabBarItems = [(title: "Partners", image: UIImage(named: "first")), (title: "Clients", image: UIImage(named: "second"))]

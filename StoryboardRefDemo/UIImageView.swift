@@ -8,6 +8,8 @@
 
 import UIKit
 
+// UIImageView extension that enables async image loading.
+
 extension UIImageView {
     public func imageFromURL(_ url: URL) {
         

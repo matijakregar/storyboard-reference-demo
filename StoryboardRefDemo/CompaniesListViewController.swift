@@ -8,6 +8,9 @@
 
 import UIKit
 
+// A superclass for the tableview controller that displays companies from the view model. 
+// Relevatnt methods for the tableview data source and navigation are implemented here.
+
 class CompaniesListViewController: UITableViewController {
     
     var companiesViewModel = CompaniesViewModel()
@@ -19,11 +22,6 @@ class CompaniesListViewController: UITableViewController {
         tableView.register(UINib(nibName: "CompanyListCell", bundle: Bundle.main), forCellReuseIdentifier: "CompanyListCell")
         
         tableView.rowHeight = 60.0
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
 
     // MARK: - Table view data source
@@ -45,7 +43,6 @@ class CompaniesListViewController: UITableViewController {
 
         return cell
     }
-        
     
     // MARK: - Navigation
 

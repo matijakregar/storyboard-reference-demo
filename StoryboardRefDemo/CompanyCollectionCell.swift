@@ -18,4 +18,11 @@ class CompanyCollectionCell: UICollectionViewCell {
             logoView.imageFromURL(logoURL)
         }
     }
+    
+    override func prepareForReuse() {
+        logoView.image = nil
+        nameLabel.text = ""
+    }
+    
+    
 }

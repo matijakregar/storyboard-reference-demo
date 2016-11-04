@@ -8,6 +8,8 @@
 
 import UIKit
 
+// A tab bar controller that assigns tab bar items and view models to the view controllers linked in the storyboard.
+
 class CollectionsTabBarController: UITabBarController {
     
     let tabBarItems = [(title: "Partners", image: UIImage(named: "first")), (title: "Clients", image: UIImage(named: "second"))]

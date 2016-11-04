@@ -8,6 +8,8 @@
 
 import UIKit
 
+// A subclass of the CompaniesListViewController that initializes and sets a specific view model.
+
 class ClientsListViewController: CompaniesListViewController {
 
     override func viewDidLoad() {

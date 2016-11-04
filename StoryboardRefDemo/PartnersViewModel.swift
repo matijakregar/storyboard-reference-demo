@@ -8,6 +8,8 @@
 
 import Foundation
 
+// A subclass of the CompaniesViewModel that implements a specific initializer.
+
 class PartnersViewModel: CompaniesViewModel {
     
     init(numPartners: UInt) {
